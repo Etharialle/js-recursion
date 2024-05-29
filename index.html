@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Recursion</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Recursion Algorithms</h1>
+    </header>
+    <main>
+        <div class="fib">
+            <h2>Fiboncci Sequence</h2>
+            <p>Enter a number to return a Fibonnaci Sequence up to the nth value</p>
+            <input type="range" id="fib-number" min="1" max="100" value="8" oninput="this.nextElementSibling.value = this.value">
+            <output>8</output>
+            <button id="fib-start">Start Recursion</button>
+            <div id="fib-result">
+
+            </div>
+        </div>
+        <div class="merge-sort">
+            <h2>Merge Sort</h2>
+            <p>Enter a space separated list of values to be sorted</p>
+            <p>Example: 5 3 9 22 4 0 99 150 143 77 62 63 1 5</p>
+            <input type="text" id="merge-number" onkeyup="value=value.replace(/[^\d ]/g,'')">
+            <button id="merge-start">Start Recursion</button>
+            <div id="merge-result">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © Etharialle 2024</p>
+    </footer>
 </body>
 </html>
